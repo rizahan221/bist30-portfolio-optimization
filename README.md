@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository contains the full Python implementation for the senior thesis on optimal portfolio allocation using BIST 30 stocks. The study applies Markowitz Mean-Variance optimization and Monte Carlo simulation to construct and evaluate three optimal portfolios against the BIST 30 benchmark index.
+This repository contains the full Jupyter Notebook implementation for the senior thesis on optimal portfolio allocation using BIST 30 stocks. The study applies Markowitz Mean-Variance optimization and Monte Carlo simulation to construct and evaluate three optimal portfolios against the BIST 30 benchmark index.
 
 ---
 
@@ -65,17 +65,21 @@ pip install yfinance pandas numpy matplotlib seaborn scipy
 
 ## Usage
 
-```bash
-python bist30_optimization.py
+Open the notebook directly in Jupyter or view it rendered on GitHub:
+
+```
+bist30_optimization.ipynb
 ```
 
-All figures are saved to the working directory:
+The notebook is self-contained — run all cells top to bottom. All figures are saved to the working directory upon execution:
 - `efficient_frontier_final.png`
 - `correlation_heatmap_final.png`
 - `weight_distribution_final.png`
 - `cumulative_returns.png`
 - `sortino_mar_divergence.png`
 - `sensitivity_analysis.png`
+
+> **Note:** The notebook requires an internet connection to download price data from Yahoo Finance. Runtime is approximately 5–10 minutes due to the 50,000-iteration Monte Carlo simulation and 500-perturbation sensitivity analysis.
 
 ---
 
